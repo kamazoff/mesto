@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pages/index.css">
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="root/root.css">
+    <title>Красоты России</title>
+</head>
+<body>
+    <div class="root">
+        
+    <header class="header">
+        <img class="header__logo" src="./images/logo.svg" alt="Место"/>
+
+    </header>
+    <main class="content">
+        <section class="popup popup__opened">
+            <form class="popup__container">
+                
+                <div class="popup__form">
+            <h3 class="title popup__title">Редактировать профиль</h3>
+            <input type="text" class="popup__field popup__field-name">
+            <input type="text" class="popup__field popup__field-about">
+            <button class="button button__submit">Сохранить</button>
+            </div>
+            <button class="button button__close"><img class="vector vector__close" src="./images/Close Icon.png"/></button>
+        </form>
+        
+        </section>
+        <section class="profile">
+            <div class="profile__description">
+            <img class="avatar" src="./images/Kusto.jpg" alt="Жак-Ив Кусто"/>
+            
+                <div class="profile__name">
+                <h2 class="title profile__title">Жак-Ив Кусто</h2>
+                <p class="subtitle profile__subtitle">Исследователь океана</p>
+                </div>
+                <button class="button button__edit"></button>
+            </div>    
+            <button class="button button__add"><img class="vector vector__add"
+                 src="./images/Vector.svg" alt="Добавить"/></button>
+        </section>
+        <section class="photos">
+            <div class="photo">
+                <img class="photo__item" src="./images/Elbrus-1.png" alt="Эльбрус"/>
+                <div class="photo__subscribe">
+                    <h3 class="title title__photo">Эльбрус</h3>
+                    <button class="photo__btn"><img class="vector vector__photo" src="./images/Vector_like.svg" alt="Понравилось"/></button>
+                </div>
+            </div>
+            <div class="photo">
+                <img class="photo__item" src="./images/forest.png" alt="Лес"/>
+                <div class="photo__subscribe">
+                    <h2 class="title title__photo">Лес</h2>
+                    <button class="photo__btn"><img class="vector vector__photo" src="./images/Vector_like.svg" alt="Понравилось"/></button>
+                </div>
+            </div>
+            <div class="photo">
+                <img class="photo__item" src="./images/mashroom.png" alt="Гриб"/>
+                <div class="photo__subscribe">
+                    <h3 class="title title__photo">Мухомор</h3>
+                    <button class="photo__btn"><img class="vector vector__photo" src="./images/Vector_like.svg" alt="Понравилось"/></button>
+                </div>
+            </div>
+            <div class="photo">
+                <img class="photo__item" src="./images/Mountains.png" alt="Горы"/>
+                <div class="photo__subscribe">
+                    <h3 class="title title__photo">Горы</h3>
+                    <button class="photo__btn"><img class="vector vector__photo" src="./images/Vector_like.svg" alt="Понравилось"/></button>
+                </div>
+            </div>
+            <div class="photo">
+                <img class="photo__item" src="./images/Saint-Peterburg.png" alt="Разводной мост"/>
+                <div class="photo__subscribe">
+                    <h2 class="title title__photo">Разводной мост</h2>
+                    <button class="photo__btn"><img class="vector vector__photo" src="./images/Vector_like.svg" alt="Понравилось"/></button>
+                </div>
+            </div>
+            <div class="photo">
+                <img class="photo__item" src="./images/tulips.png" alt="Тюльпаны"/>
+                <div class="photo__subscribe">
+                    <h3 class="title title__photo">Тюльпаны</h3>
+                    <button class="photo__btn"><img class="vector vector__photo" src="./images/Vector_like.svg" alt="Понравилось"/></button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p class="footer__copyright"> &#169; 2020 Mesto Russia</p>
+    </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
