@@ -1,0 +1,12 @@
+@import url(../__field/_name/popup__field_name.css);
+
+.popup__field {
+    width: 83%;
+    min-height: 43px;
+    border: none;
+    border-bottom: 1px solid #f2f2f2;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}

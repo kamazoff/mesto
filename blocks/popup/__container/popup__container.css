@@ -1,0 +1,17 @@
+.popup__container {
+    display: flex;
+    width: 466px;
+    height: 366px;
+    margin: auto;
+    margin-top: 155px;
+    align-items: flex-end;
+    transform: translate(4.1%, -1%);
+}
+
+@media screen and (max-width : 500px) {
+    .popup__container {
+        width: 100%;
+        transform: translate(0, 0);
+    }
+    
+}

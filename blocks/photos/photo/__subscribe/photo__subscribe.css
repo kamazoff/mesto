@@ -1,0 +1,9 @@
+.photo__subscribe {
+    display: flex;
+    flex-direction: row;
+    padding: 25px 15px 31px 21px; 
+    justify-content: space-between;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0 0 10px 10px;
+}

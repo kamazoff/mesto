@@ -1,0 +1,11 @@
+.popup__submit_button {
+    width: 83%;
+    min-height: 50px;
+    margin: 48px auto 37px;
+    padding: 0;
+}
+
+.popup__submit_button:hover {
+    background: linear-gradient(rgba(0, 0, 0, .8),
+    rgba(0, 0, 0, .8));
+}

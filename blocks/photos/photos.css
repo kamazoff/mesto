@@ -1,0 +1,15 @@
+@import url(./photo/photo.css);
+@import url(./photo/__item/photo__item.css);
+@import url(./photo/__subscribe/photo__subscribe.css);
+@import url(./photo/__button/photo__button.css);
+@import url(./photo/__title/photo__title.css);
+@import url(./photo/__vector/photo__vector.css);
+
+.photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 282px);
+    margin: 51px auto 0;
+    grid-row-gap: 21px;
+    grid-column-gap: 18px;
+    justify-content: center;
+}
