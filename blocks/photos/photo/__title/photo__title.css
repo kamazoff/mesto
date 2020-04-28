@@ -1,3 +1,4 @@
 .photo__title {
+    text-overflow: ellipsis;
     margin: 0;
 }
