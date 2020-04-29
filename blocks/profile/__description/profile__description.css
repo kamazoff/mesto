@@ -1,7 +1,9 @@
 .profile__description {
     display: flex;
     align-items: center;
+    
 }
+
 
 @media screen and (max-width : 640px) {
     .profile__description {
