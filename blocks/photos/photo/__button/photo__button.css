@@ -1,3 +1,8 @@
 .photo__button {
     background-color: #fff;
+    
+}
+
+.photo__button:hover {
+    transform: scale(1.3);
 }
