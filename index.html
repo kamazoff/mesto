@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="pages/index.css">
+    <link rel="stylesheet" href="style.css">
+    
     <title>Красоты России</title>
 </head>
 <body>
@@ -21,6 +24,20 @@
             <button type="button" class="button popup__close_button">
                 <img src="./images/Close_Icon.png" alt="Закрыть"/></button>
         </form>
+    </article>
+        <article class="popup">
+        <form class="popup__container popup__container_photo">
+                
+            <div class="popup__form">
+        <h3 class="title popup__title">Новое место</h3>
+        <input type="text" class="popup__field popup__field_name_card" placeholder="Название">
+        <input type="text" class="popup__field popup__field_link_card" placeholder="Ссылка на картинку">
+        <button class="button popup__submite_button">
+            <span class="title popup__submite_title">Создать</span></button>
+        </div>
+        <button type="button" class="button popup__close_button">
+            <img src="./images/Close_Icon.png" alt="Закрыть"/></button>
+    </form>
         
         </article>   
     <header class="header">
@@ -45,6 +62,7 @@
         <section class="photos">
             <div class="photo">
                 <img class="photo__item" src="./images/Elbrus-1.png" alt="Эльбрус"/>
+                <button type="button" class="button photo__button_basket"></button>
                 <div class="photo__subscribe">
                     <h3 class="title photo__title">Эльбрус</h3>
                     <button type="button" class="button photo__button"><img src="./images/Vector_like.svg" alt="Понравилось"/></button>
@@ -52,6 +70,7 @@
             </div>
             <div class="photo">
                 <img class="photo__item" src="./images/forest.png" alt="Лес"/>
+                <button type="button" class="button photo__button_basket"></button>
                 <div class="photo__subscribe">
                     <h2 class="title photo__title">Лес</h2>
                     <button type="button" class="button photo__button"><img src="./images/Vector_like.svg" alt="Понравилось"/></button>
@@ -59,6 +78,7 @@
             </div>
             <div class="photo">
                 <img class="photo__item" src="./images/mashroom.png" alt="Гриб"/>
+                <button type="button" class="button photo__button_basket"></button>
                 <div class="photo__subscribe">
                     <h3 class="title photo__title">Мухомор</h3>
                     <button type="button" class="button photo__button"><img src="./images/Vector_like.svg" alt="Понравилось"/></button>
@@ -66,6 +86,7 @@
             </div>
             <div class="photo">
                 <img class="photo__item" src="./images/Mountains.png" alt="Горы"/>
+                <button type="button" class="button photo__button_basket"></button>
                 <div class="photo__subscribe">
                     <h3 class="title photo__title">Горы</h3>
                     <button type="button" class="button photo__button"><img src="./images/Vector_like.svg" alt="Понравилось"/></button>
@@ -73,6 +94,7 @@
             </div>
             <div class="photo">
                 <img class="photo__item" src="./images/Saint-Peterburg.png" alt="Разводной мост"/>
+                <button type="button" class="button photo__button_basket"></button>
                 <div class="photo__subscribe">
                     <h2 class="title photo__title">Разводной мост</h2>
                     <button type="button" class="button photo__button"><img src="./images/Vector_like.svg" alt="Понравилось"/></button>
@@ -80,9 +102,11 @@
             </div>
             <div class="photo">
                 <img class="photo__item" src="./images/tulips.png" alt="Тюльпаны"/>
+                <button type="button" class="button photo__button_basket"></button>
                 <div class="photo__subscribe">
                     <h3 class="title photo__title">Тюльпаны</h3>
                     <button type="button" class="button photo__button"><img src="./images/Vector_like.svg" alt="Понравилось"/></button>
+                    
                 </div>
             </div>
         </section>

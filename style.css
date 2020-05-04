@@ -1,0 +1,12 @@
+.photo__button_basket {
+    background-image: url(../mesto/images/Basket.svg);
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    outline: none;
+}
+

@@ -3,12 +3,43 @@ const popup = document.querySelector('.popup'),
     popupClose = document.querySelector('.popup__close_button'),
     popupSubmit = document.querySelector('.popup__submit_button'),
     formElement = document.querySelector('.popup__form'),
-    nameInput = document.querySelector('.profile__title');
+    nameInput = document.querySelector('.profile__title'),
     jobInput = document.querySelector('.profile__subtitle'),
     fieldName = document.querySelector('.popup__field_name'),
-    fieldAbout = document.querySelector('.popup__field_about');
-
+    fieldAbout = document.querySelector('.popup__field_about'),
+    popupAddPhoto = document.querySelector('.profile__add_button'),
+    photoItem = document.querySelector('.photo__item');
+    popupContainer = document.querySelector('.popup__container');
+    popupContainerPhoto = document.querySelector('.popup__container_photo');
     
+    const initialCards = [
+        {
+            name: 'Эльбрус',
+            link: 'https://images/Elbrus-1.png'
+        },
+        {
+            name: 'Лес',
+            link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
+        },
+        {
+            name: 'Гриб',
+            link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
+        },
+        {
+            name: 'Горы',
+            link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
+        },
+        {
+            name: 'Разводной мост',
+            link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
+        },
+        {
+            name: 'Тюльпаны',
+            link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
+        }
+    ];
+    
+
 function formOpenClose () {
     popup.classList.toggle('popup_opened');
     
@@ -23,6 +54,8 @@ function formOpenClose () {
     }
 }
 
+
+
 function formSubmitHandler (evt) {
     evt.preventDefault();
     formOpenClose ();
@@ -30,7 +63,11 @@ function formSubmitHandler (evt) {
         jobInput.textContent = fieldAbout.value;
 }
 
+
+
 popupOpen.addEventListener('click', formOpenClose);
 
 popupSubmit.addEventListener('click', formSubmitHandler);
+
 popupClose.addEventListener('click', formOpenClose);
+
