@@ -3,11 +3,15 @@
     font-size: 18px;
     line-height: 22px;
     margin-top: 4px;
+<<<<<<< HEAD
     text-overflow: ellipsis; 
     overflow: hidden; 
     white-space: nowrap; 
     
     
+=======
+    text-overflow: ellipsis;
+>>>>>>> develop
 }
 
 @media screen and (max-width : 375px)  {

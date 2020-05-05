@@ -3,12 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="stylesheet" href="pages/index.css">
+    <link rel="stylesheet" href="style.css">
+    
     <title>Красоты России</title>
 </head>
 <body>
     <div class="root">
+<<<<<<< HEAD
         <article class="popup">
+=======
+        <!-- попап редактировать профиль-->
+        <article class="popup popup__edit_profile">
+>>>>>>> develop
             <form class="popup__container">
                 
                 <div class="popup__form">
@@ -21,7 +29,41 @@
             <button type="button" class="button popup__close_button">
                 <img src="./images/Close_Icon.png" alt="Закрыть"/></button>
         </form>
+    </article>
+        <!-- попап добавить фото--> 
+        <article class="popup popup__add_card">
+        <form class="popup__container popup__container_photo">
+                
+            <div class="popup__form">
+        <h3 class="title popup__title">Новое место</h3>
+        <input type="text" class="popup__field popup__field_name_card" placeholder="Название">
+        <input type="text" class="popup__field popup__field_link_card" placeholder="Ссылка на картинку">
+        <button class="button popup__submite_button">
+            <span class="title popup__submite_title">Создать</span></button>
+        </div>
+        <button type="button" class="button popup__close_button">
+            <img src="./images/Close_Icon.png" alt="Закрыть"/></button>
+    </form>
         
+        </article>   
+        <!-- попап увеличить фото-->
+        <article class="popup popup__zoom">
+            <form class="popup__container popup__container_zoom">
+              <div class="popup__form popup__form_zoom">
+                <button type="button" class="button popup__close_button">
+                <img src="./images/Close_Icon.png" alt="Закрыть"/></button>
+                <img class="popup__form_image">
+              </div>
+              <h4 class="title popup__title"></h4>
+        </form>
+    </article>
+    <header class="header">
+        <img class="header__logo" src="./images/logo.svg" alt="Место"/>
+
+    </header>
+    <main class="content">
+        
+<<<<<<< HEAD
         </article>   
     <header class="header">
         <img class="header__logo" src="./images/logo.svg" alt="Место"/>
@@ -29,6 +71,8 @@
     </header>
     <main class="content">
         
+=======
+>>>>>>> develop
         <section class="profile">
             <div class="profile__description">
             <img class="profile__avatar" src="./images/Kusto.jpg" alt="Жак-Ив Кусто"/>
@@ -39,6 +83,7 @@
                 </div>
                 <button type="button" class="button profile__edit_button"></button>
             </div>    
+<<<<<<< HEAD
             <button type="button" class="button profile__add_button"><img src="./images/Vector.svg" alt="Добавить"/></button>
         </section>
         <section class="photos">
@@ -84,6 +129,13 @@
                     <button type="button" class="button photo__button"><img src="./images/Vector_like.svg" alt="Понравилось"/></button>
                 </div>
             </div>
+=======
+            <button type="button" class="button profile__add_button"><img class="vector profile__add_vector"
+                 src="./images/Vector.svg" alt="Добавить"/></button>
+        </section>
+        <section class="photos">
+            
+>>>>>>> develop
         </section>
 
     </main>
@@ -91,6 +143,19 @@
         <p class="footer__copyright"> &#169; 2020 Mesto Russia</p>
     </footer>
     </div>
+<<<<<<< HEAD
+=======
+    <template id="photos-template">  
+        <div class="photo">  
+            <button type="button" class="button photo__button_basket">
+          <img class="photo__item">  
+           <div class="photo__subscribe"> 
+            <h3 class="photo__title"></h3> 
+            <button class="button photo__button" type="button"></button>
+          </div> 
+        </div> 
+      </template> 
+>>>>>>> develop
     <script src="./scripts/script.js"></script>
 </body>
 </html>
