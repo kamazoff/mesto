@@ -10,3 +10,16 @@
     outline: none;
 }
 
+/*.popup__zoom {
+    display: flex;
+}*/
+
+.popup__form_image {
+    height: 100vh;
+    width: 100vh;
+}
+
+.popup__form_zoom {
+    max-width: 816px;
+    max-height: 540px;
+}
