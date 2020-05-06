@@ -1,3 +1,2 @@
-.popup__zoom {
-    
-}
+@import url(./_box/popup__zoom_box.css);
+@import url(./_image/popup__zoom_image.css);
