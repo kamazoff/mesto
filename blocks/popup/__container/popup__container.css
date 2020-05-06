@@ -1,10 +1,10 @@
 .popup__container {
     display: flex;
+    flex-direction: column;
     width: 466px;
     height: 366px;
     margin: auto;
     margin-top: 155px;
-    align-items: flex-end;
     transform: translate(4.1%, -1%);
 }
 

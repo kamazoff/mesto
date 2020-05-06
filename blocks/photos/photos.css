@@ -2,10 +2,12 @@
 @import url(./photo/__item/photo__item.css);
 @import url(./photo/__subscribe/photo__subscribe.css);
 @import url(./photo/__button/photo__button.css);
+@import url(./photo/__button/_basket/photo__button_basket.css);
 @import url(./photo/__title/photo__title.css);
 
 
 .photos {
+  
     display: grid;
     grid-template-columns: repeat(auto-fill, 282px);
     margin: 51px auto 0;

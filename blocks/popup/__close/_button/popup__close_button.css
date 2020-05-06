@@ -1,7 +1,8 @@
 .popup__close_button {
-    align-self: flex-start;
+    align-self: flex-end;
     margin: 0;
     text-align: center;
     padding: 0;
     background-color: transparent;
+    justify-self: flex-end;
 }    
