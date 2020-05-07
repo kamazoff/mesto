@@ -1,4 +1,4 @@
-.profile__edit_button {
+.profile__edit-button {
     background-image: url(../../../images/Vector_edit.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -11,7 +11,7 @@
 }
 
 @media screen and (max-width : 320px) {
-    .profile__edit_button {
+    .profile__edit-button {
         margin-left: 1px;
        
         width: 18px;

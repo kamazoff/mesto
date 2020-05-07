@@ -11,7 +11,7 @@
 <body>
     <div class="root">
         <!-- попап редактировать профиль-->
-        <article class="popup popup__edit_profile">
+        <article class="popup popup_type_profile">
             <form class="popup__container">
                 <button type="button" class="button popup__close_button">
                     <img src="./images/Close_Icon.png" alt="Закрыть"/></button>    
@@ -20,13 +20,13 @@
             <input type="text" class="popup__field popup__field_name">
             <input type="text" class="popup__field popup__field_about">
             <button class="button popup__submit_button">
-                <span class="title popup__submite_title">Сохранить</span></button>
+                <span class="title popup__submit_title">Сохранить</span></button>
             </div>
             
         </form>
     </article>
         <!-- попап добавить фото--> 
-        <article class="popup popup__add_card">
+        <article class="popup popup_type_card">
         <form class="popup__container popup__container_photo">
             <button type="button" class="button popup__close_button" id="close_card">
                 <img src="./images/Close_Icon.png" alt="Закрыть"/></button>        
@@ -35,19 +35,19 @@
         <input type="text" class="popup__field popup__field_name_card" placeholder="Название">
         <input type="text" class="popup__field popup__field_link_card" placeholder="Ссылка на картинку">
         <button class="button popup__submit_button popup__submite_button_add">
-            <span class="title popup__submite_title">Создать</span></button>
+            <span class="title popup__submit_title">Создать</span></button>
         </div>
         
     </form>
         
         </article>   
         <!-- попап увеличить фото-->
-        <article class="popup popup__zoom">
+        <article class="popup popup_type_zoom">
             <form class="popup__zoom_box">
                 <button type="button" class="button popup__close_button popup__close_button_zoom" id="zoom_image_close">
                     </button>
                 <img class="popup__zoom_image">
-                <h4 class="title popup__photo_title"></h4>
+                <h4 class="title popup__photo-title"></h4>
         </form>
     </article>
     <header class="header">
@@ -64,10 +64,9 @@
                 <h2 class="title profile__title">Жак-Ив Кусто</h2>
                 <p class="subtitle profile__subtitle">Исследователь океана</p>
                 </div>
-                <button type="button" class="button profile__edit_button"></button>
+                <button type="button" class="button profile__edit-button"></button>
             </div>    
-            <button type="button" class="button profile__add_button"><img class="vector profile__add_vector"
-                 src="./images/Vector.svg" alt="Добавить"/></button>
+            <button type="button" class="button profile__add-button"><img src="./images/Vector.svg" alt="Добавить"/></button>
         </section>
         <section class="photos">
             
@@ -75,7 +74,7 @@
 
     </main>
     <footer class="footer">
-        <p class="footer__copyright"> &#169; 2020 Mesto Russia</p>
+        <p class="footer__text"> &#169; 2020 Mesto Russia</p>
     </footer>
     </div>
     <template id="photos-template">  

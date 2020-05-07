@@ -1,21 +1,20 @@
 const popup = document.querySelector('.popup'),
-    popupOpen = document.querySelector('.profile__edit_button'),
+    popupOpen = document.querySelector('.profile__edit-button'),
     popupClose = document.querySelector('.popup__close_button'),
     popupSubmit = document.querySelector('.popup__submit_button'),
-    formElement = document.querySelector('.popup__form'),
     formContainer = document.querySelector('.popup__container'),
     nameInput = document.querySelector('.profile__title'),
     jobInput = document.querySelector('.profile__subtitle'),
     fieldName = document.querySelector('.popup__field_name'),
     fieldAbout = document.querySelector('.popup__field_about'),
-    addButton = document.querySelector('.profile__add_button'),
+    addButton = document.querySelector('.profile__add-button'),
     photos = document.querySelector('.photos'),
-    cards = document.querySelector('.popup__add_card'),
+    cards = document.querySelector('.popup_type_card'),
     cardsCloseBtn = document.querySelector('#close_card'),
     imgCloseBtn = document.querySelector('#zoom_image_close'),
     zoomPhoto = document.querySelector('.popup__zoom_image'),
-    zoomTitle = document.querySelector('.popup__photo_title'),
-    formPhotos = document.querySelector('.popup__zoom'),
+    zoomTitle = document.querySelector('.popup__photo-title'),
+    formPhotos = document.querySelector('.popup_type_zoom'),
     photoName = document.querySelector('.popup__field_name_card'),
     photoLink = document.querySelector('.popup__field_link_card'),
     newPhotos = document.querySelector('.popup__container_photo');
@@ -52,11 +51,6 @@ function formOpenClose (form) {
     form.classList.toggle('popup_opened');
 }
 
-// карточки из массива  
-initialCards.forEach(function (photo) { 
-    photos.append(createCards(photo.name, photo.link)); 
-  }) 
-
   // клонирование карточек 
 function createCards(title, image) { 
     const photosTemplate = document.querySelector('#photos-template').content; 
@@ -70,7 +64,7 @@ function createCards(title, image) {
     }); 
 
 // удаление карточки 
-photosCards.querySelector('.photo__button_basket').addEventListener('click', function (evt) { 
+  photosCards.querySelector('.photo__button_basket').addEventListener('click', function (evt) { 
     evt.target.parentElement.classList.add('photo__button_basket_active'); 
   }); 
 
@@ -84,11 +78,16 @@ photosCards.querySelector('.photo__button_basket').addEventListener('click', fun
   return photosCards; 
 } 
 
+// карточки из массива  
+initialCards.forEach(function (photo) { 
+  photos.append(createCards(photo.name, photo.link)); 
+}) 
+
 function formSubmitHandler (evt) {
     evt.preventDefault();
     formOpenClose (popup);
     nameInput.textContent = fieldName.value;
-        jobInput.textContent = fieldAbout.value;
+    jobInput.textContent = fieldAbout.value;
 }
 
 function photoSubmitHandler (evt) {
@@ -103,7 +102,7 @@ function photoSubmitHandler (evt) {
 function editForm(){
     formOpenClose(popup);
     fieldName.value = nameInput.textContent;
-        fieldAbout.value = jobInput.textContent;
+    fieldAbout.value = jobInput.textContent;
   }
 
 popupOpen.addEventListener('click', editForm);
